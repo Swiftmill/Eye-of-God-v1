@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Northern Data Pulse",
+    "description": "Flux télémétrique depuis la calotte nord – activités ionosphériques à haute fréquence.",
+    "src": "https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4"
+  },
+  {
+    "title": "Infrared Sweep",
+    "description": "Balayage infrarouge du réseau urbain – densité énergétique à 1.9e6 lux.",
+    "src": "https://storage.googleapis.com/coverr-main/mp4/Footboys.mp4"
+  },
+  {
+    "title": "Stratos Relay",
+    "description": "Relais stratégiques en orbite basse – handover sécurisé établi.",
+    "src": "https://storage.googleapis.com/coverr-main/mp4/Switch.mp4"
+  },
+  {
+    "title": "Oceanic Watch",
+    "description": "Vecteurs navals identifiés – suivi bathymétrique du Pacifique nord.",
+    "src": "https://storage.googleapis.com/coverr-main/mp4/Waterfall.mp4"
+  }
+]

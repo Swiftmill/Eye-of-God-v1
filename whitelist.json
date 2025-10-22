@@ -1,0 +1,20 @@
+{
+  "sites": [
+    {
+      "label": "NASA Earth Observatory",
+      "url": "https://earthobservatory.nasa.gov"
+    },
+    {
+      "label": "ESA Earth Online",
+      "url": "https://earth.esa.int/eogateway"
+    },
+    {
+      "label": "NOAA Satellite and Information Service",
+      "url": "https://www.nesdis.noaa.gov/"
+    },
+    {
+      "label": "USGS Earth Explorer",
+      "url": "https://earthexplorer.usgs.gov/"
+    }
+  ]
+}
