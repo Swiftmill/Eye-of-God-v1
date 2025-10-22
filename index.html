@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eye of God</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-bar" role="banner">
+    <div class="logo" aria-label="Eye of God">EoG</div>
+    <nav class="top-controls" aria-label="Contrôles">
+      <button id="toggle-low-motion" class="control-btn" type="button">Low Motion</button>
+      <button id="toggle-accessibility" class="control-btn" type="button" aria-expanded="false" aria-controls="accessibility-panel">Accessibilité</button>
+    </nav>
+  </header>
+
+  <aside id="accessibility-panel" class="accessibility-panel" hidden>
+    <h2>Préférences</h2>
+    <label class="toggle">
+      <input id="reduce-motion" type="checkbox" />
+      <span>Réduire les animations</span>
+    </label>
+    <label class="toggle">
+      <input id="mute-videos" type="checkbox" checked />
+      <span>Muter les vidéos</span>
+    </label>
+  </aside>
+
+  <main class="main-content" role="main">
+    <div class="scene-container" aria-live="polite">
+      <canvas id="eye-scene" aria-hidden="true"></canvas>
+      <div class="mobile-fallback" id="mobile-fallback" role="presentation">
+        <img src="https://images-assets.nasa.gov/image/PIA18033/PIA18033~orig.jpg" alt="Visualisation de la Terre" loading="lazy" />
+        <div class="fallback-grid" id="fallback-grid" role="list">
+          <!-- JS injects fallback tiles -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="overlay" class="overlay" role="dialog" aria-modal="true" aria-hidden="true" hidden tabindex="-1">
+    <div class="overlay-bg"></div>
+    <div class="overlay-content">
+      <button id="close-overlay" class="overlay-close" type="button" aria-label="Fermer">×</button>
+      <div class="overlay-video-wrapper">
+        <video id="overlay-video" playsinline loop></video>
+        <div class="glitch-layer" aria-hidden="true"></div>
+      </div>
+      <div class="overlay-info">
+        <h2 id="overlay-title">Transmission</h2>
+        <p id="overlay-description">Analyse en cours…</p>
+        <div class="overlay-actions">
+          <button id="toggle-play" class="control-btn" type="button">Pause</button>
+          <button id="random-site" class="control-btn" type="button">Go to random site</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
